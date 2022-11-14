@@ -25,7 +25,7 @@
     </head>
     <body class="antialiased" style="background-color: #4c5057;" >
 
-        <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0" >
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center min-vh-100" >
             
             <form action="event" method="GET">
 
@@ -52,6 +52,8 @@
         </div>
  
     </body>
+
+    @include('footer')
     
 </html>
 
