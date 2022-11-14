@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Main route
-Route::get('/', function () {
-    return view('index-main');
-});
+// Route::get('/', function () {
+//     return view('index-main');
+// });
+
+Route::get('/', [EventController::class, 'index'])
+    ->name('HomePage');
 
 // Route to event.blade.php page
 Route::get('/event', function () {
